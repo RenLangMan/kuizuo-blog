@@ -1,0 +1,1 @@
+F:docusaurus/resource/shell/docusaurus_backup.sh

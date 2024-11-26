@@ -1,0 +1,38 @@
+ysundy:
+  name: ysundy
+  title: 喜欢瞎折腾的前端小白1
+  url: https://github.com/RenLangMan
+  image_url: https://ice.frostsky.com/2024/08/17/fe2225d1be58e6076fd44a1744cd69e4.png
+
+wyf:
+  name: wyf
+  title: 喜欢瞎折腾的前端小白2
+  url: https://github.com/RenLangMan
+  image_url: https://ice.frostsky.com/2024/08/17/fe2225d1be58e6076fd44a1744cd69e4.png
+  page: true
+
+hg:
+  name: One
+  title: 明信静性，爱自己
+  url: https://onedayxyy.cn/
+  image_url: /img/xyy.png
+  page: true
+
+jmarcey:
+  name: Joel Marcey
+  title: Co-creator of Docusaurus 1
+  url: https://github.com/JoelMarcey
+  image_url: https://github.com/JoelMarcey.png
+  email: jimarcey@gmail.com
+  socials:
+    x: joelmarcey
+    github: JoelMarcey
+
+slorber:
+  name: Sébastien Lorber
+  title: Docusaurus maintainer
+  url: https://sebastienlorber.com
+  image_url: https://github.com/slorber.png
+  socials:
+    x: sebastienlorber
+    github: slorber

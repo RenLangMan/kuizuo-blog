@@ -1,0 +1,45 @@
+
+
+Print latestUpdateArcticleTop10……
+Print websiteMonitor……
+/f/docusaurus/resource/shell/website_monitor.sh: line 36: /d/docusaurus/docs/5、关于我/关于本站/2、网站监控.md: No such file or directory
+bash: yarn: command not found
+docusaurus 本地数据构建成功！
+
+
+<!doctype html>
+<html lang="zh-CN" dir="ltr" class="plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+推送winodws site数据到ecs：
+
+F:\docusaurus>echo  Push winodws docusaurus static data to ecs...
+ Push winodws docusaurus static data to ecs...
+
+F:\docusaurus>rsync.exe -avPzruh --delete --port 8730 --password-file=/homepc1/F
+/docusaurus/resource/shell/password.txt /homepc1/F/docusaurus/build root@101.35.
+100.97::cmi-docusaurus/
+rsync: [sender] could not open password file /homepc1/F/docusaurus/resource/shel
+l/password.txt: No such file or directory (2)
+rsync error: syntax or usage error (code 1) at authenticate.c(189) [sender=3.2.7
+]
+rsync: rsync数据winodws-->ecs推送成功!
+
+
+重新加载ecs上nginx进程：
+ssh: connect to host 101.35.100.97 port 22: Connection refused
+
+
+汇总docusaurus数据目录大小：
+winodws上docusaurus元数据总大小：
+64M
+
+
+winodws上docusaurus静态数据大小：
+40M
+
+
+ecs上docusaurus静态数据大小：
+

@@ -3,6 +3,8 @@ import features from '@site/data/features'
 import { cn } from '@site/src/lib/utils'
 import { BentoGrid, BentoGridItem } from '../../magicui/bento-grid'
 import { Section } from '../Section'
+import Github from './Github'
+import Skill from './Skill'
 
 export default function FeaturesSection() {
   return (
@@ -24,6 +26,10 @@ export default function FeaturesSection() {
         <Skill className="md:col-span-2 md:row-span-2" />
         <Github className="h-full md:col-span-4 md:row-span-2" />
       </div> */}
+      <div className='mt-4 grid grid-cols-1 justify-center gap-4 max-md:px-4 md:grid-cols-6 md:grid-rows-2'>
+        <Skill className="md:col-span-2 md:row-span-2" />
+        <Github className="h-full md:col-span-4 md:row-span-2" />
+      </div>
     </Section>
   )
 }

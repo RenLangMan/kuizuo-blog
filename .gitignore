@@ -38,3 +38,6 @@ yarn-error.log*
 pnpm-error.log*
 
 .vercel
+
+/docs
+/blog

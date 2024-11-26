@@ -1,0 +1,1266 @@
+[ERROR] Error: Unable to build website for locale zh-CN.
+    at tryToBuildLocale (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:54:19)
+    at async F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:65:9
+    at async mapAsyncSequential (F:\docusaurus\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+    at async Command.build (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:63:5) {
+  [cause]: Error: Docusaurus static site generation failed for 1 paths:
+  - "/blog/authors"
+      at generateStaticFiles (F:\docusaurus\node_modules\@docusaurus\core\lib\ssg.js:86:15)
+      at async executeSSG (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:174:23)
+      ... 4 lines matching cause stack trace ...
+      at async Command.build (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:63:5) {
+    [cause]: AggregateError
+        at generateStaticFiles (F:\docusaurus\node_modules\@docusaurus\core\lib\ssg.js:87:20)
+        at async executeSSG (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:174:23)
+        at async buildLocale (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:134:31)
+        at async tryToBuildLocale (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:47:13)
+        at async F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:65:9
+        at async mapAsyncSequential (F:\docusaurus\node_modules\@docusaurus\utils\lib\jsUtils.js:21:24)
+        at async Command.build (F:\docusaurus\node_modules\@docusaurus\core\lib\commands\build.js:63:5) {
+      [errors]: [
+        Error: Can't render static file for pathname "/blog/authors"
+            at generateStaticFile (F:\docusaurus\node_modules\@docusaurus\core\lib\ssg.js:119:15)
+            at runNextTicks (node:internal/process/task_queues:60:5)
+            at process.processImmediate (node:internal/timers:449:9)
+            at async F:\docusaurus\node_modules\p-map\index.js:57:22 {
+          [cause]: ReactContextError
+              at contexts_useBlogPost (server.bundle.js:14336:107)
+              at BlogSidebarDesktop (server.bundle.js:23145:92)
+              at Uc (server.bundle.js:29242:44)
+              at Xc (server.bundle.js:29244:253)
+              at Z (server.bundle.js:29250:89)
+              at Xc (server.bundle.js:29244:481)
+              at Z (server.bundle.js:29250:89)
+              at Yc (server.bundle.js:29253:98)
+              at $c (server.bundle.js:29252:140)
+              at Z (server.bundle.js:29250:345) {
+            message: 'Hook contexts_useBlogPost is called outside the <BlogPostProvider>. '
+          }
+        }
+      ]
+    }
+  }
+}
+[INFO] Docusaurus version: 3.5.2
+Node version: v20.12.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+F:\docusaurus>yarn start
+[INFO] Starting the development server...
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\9、文件中转编辑区\wenj3.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\myfirstblog.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\9、文件中转编辑区\picgo.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\lifestyle\myfirstlifestyleblog.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\9、文件中转编辑区\一些链接.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\develop\creategiteerepo.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\project\myfirstProjectblog.md" because the file is not tracked by git.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\program\myfirstblog.md" because the file is not tracked by git.
+[WARNING] No docs found in "3、专题/01、网站搭建": can't auto-generate a sidebar.
+[WARNING] Error: Failed to retrieve the git history for file "F:\docusaurus\blog\reference\myfirst_reference_blog.md" because the file is not tracked by git.
+[WARNING] Duplicate routes found!
+- Attempting to create page at /docs/zhishiku, but a page already exists at this route.
+This could lead to non-deterministic routing behavior.
+[SUCCESS] Docusaurus website is running at: http://localhost:3000/
+
+✖ Client
+  Compiled with some errors in 26.34s
+
+[WARNING] Docs markdown link couldn't be resolved: (docs/tools/win系统录制GIF.md) in source file "F:\docusaurus\docs\其他博客信息\docs\Stack\Linux\Ubuntu录制GIF.md" for version current
+[WARNING] Docs markdown link couldn't be resolved: (/docs/Stack/Linux/如何制作Ubuntu启动盘.md) in source file "F:\docusaurus\docs\其他博客信息\docs\Stack\Linux\win10安装Ubuntu20.04.md" for version current   
+[WARNING] Docs markdown link couldn't be resolved: (docs/Stack/Linux/Ubuntu录制GIF.md) in source file "F:\docusaurus\docs\其他博客信息\docs\tools\win系统录制GIF.md" for version current
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\BlogPostItems\\index.tsx","moduleName":"./src/theme/BlogPostItems/index.tsx","loc":"1:536-552","message":"export 'BlogPostProvider' (imported as 'BlogPostProvider') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, 
+ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, 
+ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+
+● Client █████████████████████████ cache (99%) begin idle
+ IdleFileCachePlugin
+
+● Client █████████████████████████  (0%)
+
+
+● Client █████████████████████████ setup (9%) compilation
+ FileUriPlugin
+
+● Client █████████████████████████ building (11%) 1/3 entries 15/16 dependencies 35/11 modules 0 active
+
+
+● Client █████████████████████████ building (15%) 2/3 entries 454/454 dependencies 68/233 modules 1 active
+ css-loader › postcss-loader › src\css\custom.css
+
+● Client █████████████████████████ building (19%) 2/3 entries 491/498 dependencies 223/265 modules 3 active
+ mdx-loader › docs\其他博客信息\docs\Site\Docusaurus\环境配置.md
+
+● Client █████████████████████████ building (30%) 2/3 entries 645/666 dependencies 485/387 modules 4 active
+ src\components\DayAndNight\styles.module.scss
+
+● Client █████████████████████████ building (42%) 2/3 entries 716/727 dependencies 766/446 modules 3 active
+ babel-loader › src\theme\BlogPostItems\index.tsx
+
+● Client █████████████████████████ building (46%) 2/3 entries 728/732 dependencies 1193/449 modules 2 active
+ css-loader › postcss-loader › src\css\custom.css
+
+● Client █████████████████████████ building (46%) 2/3 entries 735/735 dependencies 1207/451 modules 1 active
+ css-loader › postcss-loader › src\css\custom.css
+
+● Client █████████████████████████ sealing (70%)
+ finish module graph
+
+● Client █████████████████████████ sealing (70%)
+ plugins
+
+● Client █████████████████████████ sealing (73%)
+ after chunk graph
+
+● Client █████████████████████████ sealing (79%)
+ module reviving
+
+● Client █████████████████████████ sealing (80%)
+ module ids
+
+● Client █████████████████████████ sealing (87%)
+ code generation
+
+● Client █████████████████████████ sealing (88%)
+ runtime requirements
+
+● Client █████████████████████████ sealing (89%)
+ after hashing
+
+● Client █████████████████████████ sealing (92%) asset processing
+ HotModuleReplacementPlugin
+
+● Client █████████████████████████ emitting (98%)
+ after emit
+
+✖ Client
+  Compiled with some errors in 2.01s
+
+client (webpack 5.93.0) compiled with 19 errors and 4 warnings
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, 
+ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, 
+ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+
+✖ Client
+  Compiled with some errors in 1.60s
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+
+✖ Client
+  Compiled with some errors in 1.35s
+
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:93-99","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:611-617","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+
+✖ Client
+  Compiled with some errors in 1.39s
+
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/plugin-content-blog/client' (possible exports: BlogPostProvider, BlogSidebarItemList, groupBlogSidebarItemsByYear, useBlogListPageStructuredData, useBlogMetadata, useBlogPost, useBlogPostStructuredData, useVisibleBlogSidebarItems)"}
+
+✖ Client
+  Compiled with some errors in 868.54ms
+
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md"
+Cause: Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "line": 226,
+  "name": "226:1-226:27",
+  "place": {
+    "start": {
+      "line": 226,
+      "column": 1,
+      "offset": 5777,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 226,
+      "column": 27,
+      "offset": 5803,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (226:1-226:22) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md"
+Cause: Unexpected `ExpressionStatement` in code: only import/exports are supported
+Details:
+{
+  "column": 1,
+  "message": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "line": 18,
+  "name": "18:1-18:6",
+  "place": {
+    "start": {
+      "line": 18,
+      "column": 1,
+      "offset": 339
+    },
+    "end": {
+      "line": 18,
+      "column": 6,
+      "offset": 344
+    }
+  },
+  "reason": "Unexpected `ExpressionStatement` in code: only import/exports are supported",
+  "ruleId": "non-esm",
+  "source": "micromark-extension-mdxjs-esm",
+  "url": "https://github.com/micromark/micromark-extension-mdxjs-esm#unexpected-type-in-code-only-importexports-are-supported"
+}
+
+--------------------------
+
+Error: MDX compilation failed for file "F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md"
+Cause: Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`
+Details:
+{
+  "column": 1,
+  "message": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "line": 59,
+  "name": "59:1-59:43",
+  "place": {
+    "start": {
+      "line": 59,
+      "column": 1,
+      "offset": 1901,
+      "_index": 0,
+      "_bufferIndex": 0
+    },
+    "end": {
+      "line": 59,
+      "column": 43,
+      "offset": 1943,
+      "_index": 1,
+      "_bufferIndex": -1
+    }
+  },
+  "reason": "Expected a closing tag for `<TabItem>` (59:1-59:24) before the end of `paragraph`",
+  "ruleId": "end-tag-mismatch",
+  "source": "mdast-util-mdx-jsx"
+}
+
+--------------------------
+
+Module not found: Error: Can't resolve './friend' in 'F:\docusaurus\data'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\components\BlogInfo'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\components\Hero'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/friend' in 'F:\docusaurus\src\pages\friends'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@react-spring/web' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-use-gesture' in 'F:\docusaurus\src\pages\project\_components\ShowcaseCard'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'loadsh' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve '@site/data/project' in 'F:\docusaurus\src\pages\project'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'dayjs' in 'F:\docusaurus\src\theme\BlogArchivePage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogListPage'
+
+--------------------------
+
+Module not found: Error: Can't resolve 'react-awesome-reveal' in 'F:\docusaurus\src\theme\BlogPostItems'
+
+--------------------------
+
+Module parse failed: Unexpected token (1:6)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> $sun: #f2ba52;
+| $moon: #f2eddf;
+|
+
+--------------------------
+
+Module parse failed: Unexpected token (2:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+| /* hero */
+> .hero {
+|   height: calc(100vh - 60px);
+|   width: 100vw;
+
+--------------------------
+
+Module parse failed: Unexpected character '@' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+| $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
+| @mixin transform($transform...) {
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, 
+ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[5].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+client (webpack 5.93.0) compiled with 19 errors and 3 warnings
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Test\docusaurus111\style.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\环境配置.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\docusaurus\node_modules\@docusaurus\mdx-loader\lib\index.js??ruleSet[1].rules[8].use[0]!F:\docusaurus\docs\其他博客信息\docs\Site\Docusaurus\文档编辑指南.md': No serializer registered for VFileMessage
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> Error -> VFileMessage
+
+
+-----
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+client (webpack 5.93.0) compiled with 3 warnings
+
+√ Client
+  Compiled successfully in 1.60s
+
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:36-42","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"3:554-560","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+[WARNING] {"moduleIdentifier":"F:\\docusaurus\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[6].use[0]!F:\\docusaurus\\src\\theme\\DocItem\\Layout\\index.tsx","moduleName":"./src/theme/DocItem/Layout/index.tsx","loc":"4:10-16","message":"export 'useDoc' (imported as 'useDoc') was not found in '@docusaurus/theme-common/internal' (possible exports: AnnouncementBarProvider, BlogAuthorsListViewAllLabel, Collapsible, ColorModeProvider, DEFAULT_SEARCH_TAG, DraftBannerMessage, DraftBannerTitle, ErrorBoundaryError, ErrorBoundaryErrorMessageFallback, ErrorBoundaryTryAgainButton, ErrorCauseBoundary, HtmlClassNameProvider, NavbarProvider, NavbarSecondaryMenuFiller, PageMetadata, PluginHtmlClassNameProvider, ReactContextError, ScrollControllerProvider, SkipToContentFallbackId, SkipToContentLink, ThemeClassNames, ThemedComponent, UnlistedBannerMessage, UnlistedBannerTitle, UnlistedMetadata, composeProviders, containsLineNumbers, createStorageSlot, duplicates, filterDocCardListItems, getPrismCssVariables, groupBy, isMultiColumnFooterLinks, isRegexpStringMatch, isSamePath, keyboardFocusedClassName, listStorageKeys, listTagsByLetters, parseCodeBlockTitle, parseLanguage, parseLines, prefersReducedMotion, processAdmonitionProps, sanitizeTabsChildren, splitNavbarItems, translateBlogAuthorsListPageTitle, translateTagsPageTitle, uniq, useAlternatePageUtils, useAnnouncementBar, useBackToTopButton, useBlogAuthorPageTitle, useBlogTagsPostsPageTitle, useClearQueryString, useCodeWordWrap, useCollapsible, useColorMode, useContextualSearchFilters, useCurrentSidebarCategory, useDateTimeFormat, useDocsPreferredVersion, useEvent, useFilteredAndTreeifiedTOC, useHideableNavbar, useHistoryPopHandler, useHistorySelector, useHomePageRoute, useKeyboardNavigation, useLocalPathname, useLocationChange, useLockBodyScroll, useNavbarMobileSidebar, useNavbarSecondaryMenu, usePluralForm, usePrevious, usePrismTheme, useQueryString, useQueryStringList, useQueryStringValue, useScrollController, useScrollPosition, useScrollPositionBlocker, useSearchLinkCreator, useSearchQueryString, useSmoothScrollTo, useStorageSlot, useTOCHighlight, useTabs, useThemeConfig, useTitleFormatter, useTreeifiedTOC, useWindowSize)"}
+client (webpack 5.93.0) compiled with 3 warnings
+
+
+
+
+
+英语
+
+家庭作业本上昨日作业订正；
+
+字母表抄3遍。
+
+在家放一个备用本子，多默写几遍。
+
+打印并完成下列题目。上述题目第3页的听力材料，晚些时候会发群里。（已做）
+
+
+
+语文作业：
+1.听写第1.2课田字格生字。完成3课双线格生字。
+2.完成《课堂作业》第三课作业。
+3.日记《暑假趣事》。
+
+9月6日周末数学作业：
+数学书P8第9、10、11题。
+⃣
+课堂作业P3错题和试卷错题在练习本3上抄题做一遍。
+
+打印完成1张试卷
+
+家长填写回执单（如下）周一收。
+
+今天发了英语课堂作业，写上姓名包好书皮。
+
+
+
+
+-----
+一年级数学
+放假数学作业：
+1.上面两张作业打印做
+2.上面、下面、左边、右边、前面、后面各写十遍（做在自己的家庭本上，用算术本写）
+
+语文作业
+1.在田字本1本上写《金木水火土》，《口耳目手足》生字，笔顺2行，字5个组2个词。按图片格式完成
+2.熟读并背诵《金木水火土》课文，指读课后生字并能够口头组词
+3.听写生字“一，二，三，上”
+@所有人 
+
+今天下发了课外培训告家长书，让孩子带回去了，麻烦各位家长仔细阅读后签字下周一让孩子带到学校来@所有人 
+
+下周为第27届普通话推广周，学校将举行主题为“加大推普力度  筑牢强国语言基石”及网络安全教育的班队会活动，一、二年级开展录制“讲故事或诗朗诵”视频活动，时间2-3分钟。有意向的同学可趁周末时间录制用普通话讲故事或诗朗诵的视频，发送到我的邮箱2376336167@qq.com，到时候将择优2个作品上交给学校
+
+-----------------

@@ -1,0 +1,26 @@
+# 预定义标签文件应遵循如下定义格式
+# type Tag = {
+#   label?: string; // Tag display label
+#   permalink?: string; // Tag URL pathname segment
+#   description?: string; // Tag description displayed in the tag page
+# };
+
+# type TagsFileInput = Record<string, Partial<Tag> | null>;
+
+
+
+releases:
+  label: 'Product releases'
+  permalink: '/product-releases'
+  description: 'Content related to product releases.'
+
+# A partial tag definition is also valid
+# 部分标签定义也是有效的
+announcements:
+  label: 'Announcements'
+
+# An empty tag definition is also valid
+# Other attributes will be inferred from the key
+# 空标签定义也是有效的
+# 其他属性将从键中推断出来
+emptyTag:
